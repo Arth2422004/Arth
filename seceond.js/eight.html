@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main_Salary(salary) {
+    let increment = 0;
+    if (salary >= 1000 && salary <= 5000) {
+        increment = 1000;
+    } else if (salary > 5000 && salary <= 10000) {
+        increment = 2000;
+    } else if (salary > 10000 && salary <= 20000) {
+        increment = 3000;
+    } else if (salary > 20000 && salary <= 50000) {
+        increment = 4000;
+    }
+    const finalSalary = salary + increment;
+    return finalSalary;
+}
+
+// Example usage:
+const employeeSalary = parseFloat(prompt("Enter the employee's salary:"));
+const finalSalary = main_Salary(employeeSalary);
+document.write("Employee's final salary:", finalSalary);
+
+    </script>
+</body>
+</html>

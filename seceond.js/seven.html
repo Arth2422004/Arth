@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Numbers(num1, num2) {
+    if (num1 === num2) {
+       document.write("<br>The numbers are the same")
+    } else if (num1 > num2) {
+        document.write( "<br>The first number is greater than the second number")
+    } else {
+        document.write("<br>The first number is less than the second number");
+    }
+}
+const number1 = parseFloat(prompt("Enter the first number:"));
+const number2 = parseFloat(prompt("Enter the second number:"));
+const comparison = Numbers(number1, number2);
+document.write(comparison);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function num_Max(a, b, c, d) {
+    var max;
+
+    if (a >= b) {
+        if (a >= c) {
+            if (a >= d) {
+                max = a;
+            } else {
+                max = d;
+            }
+        } else {
+            if (c >= d) {
+                max = c;
+            } else {
+                max = d;
+            }
+        }
+    } else {
+        if (b >= c) {
+            if (b >= d) {
+                max = b;
+            } else {
+                max = d;
+            }
+        } else {
+            if (c >= d) {
+                max = c;
+            } else {
+                max = d;
+            }
+        }
+    }
+
+    return max;
+}
+var num1 = 10;
+var num2 = 30;
+var num3 = 15;
+var num4 = 25;
+
+var max = num_Max(num1, num2, num3, num4);
+document.write("The maximum number is: " + max);
+
+    </script>
+</body>
+</html>

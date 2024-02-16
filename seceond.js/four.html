@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getDayOfWeek(input) {
+    var day;
+
+    switch (input.toUpperCase()) {
+        case 'M':
+            day = "Monday";
+            break;
+        case 'T':
+            day = "Tuesday";
+            break;
+        case 'W':
+            day = "Wednesday";
+            break;
+        case 'TH':
+            day = "Thursday";
+            break;
+        case 'F':
+            day = "Friday";
+            break;
+        case 'S':
+            day = "Saturday";
+            break;
+        case 'SU':
+            day = "Sunday";
+            break;
+        default:
+            day = "Invalid input";
+    }
+
+    return day;
+}
+
+var Input = prompt("Enter a day this (M, T, W, TH, F, S, SU):");
+var dayOfWeek = getDayOfWeek(Input);
+document.write("The day is: " + dayOfWeek);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Bill(units) {
+    let bill = 0;
+    
+    if (units <= 50) {
+        bill = units * 0.50;
+    } else if (units <= 150) {
+        bill = 50 * 0.50 + (units - 50) * 0.75;
+    } else if (units <= 250) {
+        bill = 50 * 0.50 + 100 * 0.75 + (units - 150) * 1.20;
+    } else {
+        bill = 50 * 0.50 + 100 * 0.75 + 100 * 1.20 + (units - 250) * 1.50;
+    }
+    
+    const surcharge = bill * 0.20;
+    
+    const totalBill = bill + surcharge;
+    
+    return totalBill;
+}
+const unitsConsumed = parseFloat(prompt("Enter the electricity units:"));
+const totalBill = Bill(unitsConsumed);
+document.write("Total electricity bill: Rs.", totalBill.toFixed(2));
+
+    </script>
+</body>
+</html>
