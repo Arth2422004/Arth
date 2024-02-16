@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function GrossSalary(baseSalary, hra, da, ta) {
+    var hra = (hra / 100) * baseSalary;
+    var da = (da / 100) * baseSalary;
+    var ta = (ta / 100) * baseSalary;
+    
+    var ans = baseSalary + hra + da + ta;
+    return ans;
+}
+var baseSalary = 100;
+var hra = 10;
+var da = 5;
+var ta = 8;
+
+var ans = GrossSalary(baseSalary, hra, da, ta);
+console.log("ans: " + ans + " RS");
+
+    </script>
+</body>
+</html>
