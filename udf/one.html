@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function add(x, y) {
+    return x + y;
+}
+
+function sub(x, y) {
+    return x - y;
+}
+
+function mul(x, y) {
+    return x * y;
+}
+
+function div(x, y) {
+    if (y === 0) {
+        document.write( "Error! Division by zero.")
+    } else {
+        return x / y;
+    }
+}
+
+function cal() {
+    var choice = prompt("operation: \n1. Add \n2. Subtract \n3. Multiply \n4. Divide");
+    var num1 = parseFloat(prompt("first number: "));
+    var num2 = parseFloat(prompt("second number: "));
+
+    switch (choice) {
+        case '1':
+        document.write("Result:", add(num1, num2));
+            break;
+        case '2':
+        document.write("Result:", sub(num1, num2));
+            break;
+        case '3':
+        document.write("Result:", mul(num1, num2));
+            break;
+        case '4':
+        document.write("Result:", div(num1, num2));
+            break;
+        default:
+        document.write("Invalid input");
+    }
+}
+
+cal();
+
+
+    </script>
+</body>
+</html>
